@@ -12,7 +12,7 @@ data Corpus = Corpus { items      :: !Int
 
 instance Show Corpus where
         show (Corpus i a c) = "Agreement: " ++ show a ++ " of " ++ show i
-                            ++ "items.\n" ++ "Categories #: " ++ (show $ M.size c) ++ "\n"
+                            ++ " items.\n" ++ "Categories #: " ++ (show $ M.size c) ++ "\n"
                             ++ M.foldWithKey (\k (c1,c2) s ->  L.unpack k ++ ": (" 
                                                            ++ show c1 ++ "," 
                                                            ++ show c2 ++ ")\n" ++ s) "" c

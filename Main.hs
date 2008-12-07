@@ -24,8 +24,8 @@ main = do args  <- getArgs
                            putStrLn $ show corpus
                            let s' = eval corpus s
                            putStrLn $ "S-Measure: " ++ show s'
-                           let a = eval corpus pi
-                           putStrLn $ "Alpha-Measure: " ++ show a
+                           let p = eval corpus pi
+                           putStrLn $ "pi-Measure: " ++ show p
                            let k = eval corpus kappa
                            putStrLn $ "Kappa-Measure: " ++ show k
 
