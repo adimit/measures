@@ -18,3 +18,8 @@ Build like any other cabal package. I.e. either with cabal itself or by running:
     runhaskell Setup.lhs install --user
 
 Then run 'measures' using your corpus file as a command line argument.
+
+References
+=========
+Artstein and Poesio. 2008. <i>Inter-Annotator Agreement</i>. Survey Article
+    Computational Linguistics, Volume 34, Number 4
