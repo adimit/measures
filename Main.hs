@@ -9,7 +9,7 @@ import System.Environment (getArgs)
 import Data.List (foldl')
 import qualified Data.Map as M
 import qualified Data.ByteString.Lazy.Char8 as C
-import Corpus
+import Measures.Corpus
 import Measures
 
 -- | Recursive fold accumulator. Reads per-line data into the 'Corpus' data

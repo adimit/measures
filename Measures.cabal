@@ -1,0 +1,23 @@
+Name:            Measures
+Version:         0.1
+Synopsis:        Inter-Annotator agreement for linguistic corpora
+Description:     A Haskell suite for calculating different measures of
+                 inter-annotator agreement for linguistic corpora.
+License:         BSD3
+Author:          Aleksandar Dimitrov
+Maintainer:      Aleksandar Dimitrov <aleks.dimitrov@gmail.com>
+Build-Depends:   base
+Cabal-Version:   >=0.12
+build-type:      Simple
+
+Library
+    Build-Depends:    base, containers, bytestring
+    Exposed-Modules:  Measures.Corpus
+
+executable measures
+    main-is:          Main.hs
+    other-modules:    Measures
+                      Measures.Corpus
+    ghc-options:      -Wall -O2
+    ghc-prof-options: -prof -auto-all
+    build-depends:    containers, bytestring

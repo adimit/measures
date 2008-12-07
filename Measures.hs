@@ -2,7 +2,7 @@ module Measures where
 
 -- | A module for performing arithmetic on annotated corpora.
 
-import Corpus
+import Measures.Corpus
 import qualified Data.Map as M 
 
 -- | S-Measure
