@@ -13,6 +13,7 @@ build-type:      Simple
 Library
     Build-Depends:    base, containers, bytestring
     Exposed-Modules:  Measures.Corpus
+                      Measures    
 
 executable measures
     main-is:          Main.hs
