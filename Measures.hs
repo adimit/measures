@@ -1,6 +1,15 @@
-module Measures where
+-- |
+-- Module      : Measures
+-- Copyright   : 2008 Aleksandar Dimitrov
+-- License     : BSD3
+--
+-- Maintainer  : Aleksandar Dimitrov <aleks.dimitrov@gmail.com>
+-- Stability   : stable
+-- Portability : portable
+--
+-- A module for performing arithmetic on annotated corpora.
 
--- | A module for performing arithmetic on annotated corpora.
+module Measures where
 
 import Measures.Corpus
 import qualified Data.Map as M 

@@ -1,8 +1,17 @@
-module Main where
+-- |
+-- Module      : Measures
+-- Copyright   : 2008 Aleksandar Dimitrov
+-- License     : BSD3
+--
+-- Maintainer  : Aleksandar Dimitrov <aleks.dimitrov@gmail.com>
+-- Stability   : stable
+-- Portability : portable
+-- 
+-- This main module provides implementation-specific details. In particular
+-- it reads in the data format and turns the relevant data in the corpus
+-- into a 'Corpus' data structure.
 
--- | This module provides implementation-specific details. In particular
---   it reads in the data format and turns the relevant data in the corpus
---   into a 'Corpus' data structure.
+module Main where
 
 import Prelude hiding (pi)
 import System.Environment (getArgs)

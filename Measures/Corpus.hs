@@ -1,6 +1,15 @@
-module Measures.Corpus where
+-- |
+-- Module      : Measures.Corpus
+-- Copyright   : 2008 Aleksandar Dimitrov
+-- License     : BSD3
+--
+-- Maintainer  : Aleksandar Dimitrov <aleks.dimitrov@gmail.com>
+-- Stability   : stable
+-- Portability : portable
+--
+-- Data structure definitions for Corpora and entries in the main Data.Map.
 
--- | Data structures for corpora
+module Measures.Corpus where
 
 import qualified Data.Map as M
 import qualified Data.ByteString.Lazy.Char8 as L
