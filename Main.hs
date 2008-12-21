@@ -37,7 +37,7 @@ main = do args  <- getArgs
                []    -> putStrLn "Please provide a file name." 
                (x:_) -> do input <- C.readFile x 
                            let corpus = foldl' gatherData (Corpus 0 0 M.empty) $ C.lines input
-                           putStrLn $ show corpus
+                           print corpus
                            let s' = eval corpus s
                            putStrLn $ "S-Measure: " ++ show s'
                            let p = eval corpus pi

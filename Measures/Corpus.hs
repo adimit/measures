@@ -27,7 +27,7 @@ data Corpus = Corpus { items      :: !Int -- ^ The total number of items in the 
 -- | List statistics of a corpus.
 instance Show Corpus where
         show (Corpus i a c) = "Agreement: " ++ show a ++ " of " ++ show i
-                            ++ " items. (" ++ (show $ (fromIntegral a)/(fromIntegral i)) ++")\n" 
+                            ++ " items. (" ++ (show $ fromIntegral a / fromIntegral i) ++")\n" 
                             ++ "Categories #: " ++ (show $ M.size c) ++ "\n"
                             ++ M.foldWithKey (\k (c1,c2) s ->  L.unpack k ++ ": (" 
                                                            ++ show c1 ++ "," 
